@@ -61,11 +61,16 @@
   margin-top: 10px;
 }
 
+.forsidecontainer h2 {
+  text-transform: uppercase;
+}
+
 .scrollDown {
   display: flex;
   flex-direction: column;
   align-items: center;
   transform: translate(-50%, -50%);
+  cursor: pointer;
   left: 50%;
   bottom: 0;
   position: absolute;

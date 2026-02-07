@@ -6,9 +6,9 @@
 
 .MobileNavigation img {
   width: 200px;
-  margin-left: 20px;
 }
 .MobileNavigation {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   height: 75px;
@@ -16,6 +16,15 @@
   width: 100%;
   z-index: 999;
   transition: 0.2s ease-in-out;
+  padding: 0 20px;
+}
+
+.MobileNavigation .nav-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .isScrolled {
@@ -26,7 +35,7 @@
 
 .HamburgerMenu {
   position: absolute;
-  right: 4%;
+  right: 20px;
   cursor: pointer;
   z-index: 1000;
 }
@@ -47,11 +56,12 @@
   background: rgba(22, 49, 81, 0.5);
   backdrop-filter: blur(30px);
   list-style: none;
-  font-size: 40px;
+  font-size: 42px;
   font-family: "Pathway Extreme", sans-serif;
-  gap: 10%;
+  gap: 24px;
   padding-left: 50px;
   box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.2s forwards;
 }
 
 .NavLinks a {
@@ -131,5 +141,16 @@
   .logo.secondary {
     display: none;
     width: 200px;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

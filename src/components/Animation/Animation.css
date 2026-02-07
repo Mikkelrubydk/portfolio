@@ -1,52 +1,37 @@
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-15px);
-  }
-  60% {
-    transform: translateY(-10px);
-  }
-}
-
 @keyframes slideInLeft {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-150px); /* starter udenfor til venstre */
     opacity: 0;
   }
   to {
-    transform: translateX(0%);
+    transform: translateX(0);
     opacity: 1;
   }
 }
 
 @keyframes slideInRight {
   from {
-    transform: translateX(100%);
+    transform: translateX(150px); /* starter udenfor til højre */
     opacity: 0;
   }
   to {
-    transform: translateX(0%);
+    transform: translateX(0);
     opacity: 1;
   }
 }
 
 @keyframes slideInBottom {
   from {
-    transform: translateY(100%);
+    transform: translateY(50px); /* starter lidt under */
     opacity: 0;
   }
   to {
-    transform: translateY(0%);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
+/* Klassene */
 .slideInLeft {
   animation: slideInLeft 1s forwards;
 }
@@ -65,7 +50,7 @@
 }
 
 .animation-wrapper {
-  overflow: hidden; /* Ensure no overflow issues */
+  overflow: hidden;
 }
 
 .animated-section {

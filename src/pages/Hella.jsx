@@ -7,7 +7,7 @@ const Hella = () => {
     <section className="projektvisning">
       <figure>
         <Animation animationClass="slideInLeft">
-          <img src="./hellamockup.webp" alt="Mockup af Hellas hjemmeside" />
+          <img src="/hellamockup.webp" alt="Mockup af Hellas hjemmeside" />
         </Animation>
       </figure>
       <article>

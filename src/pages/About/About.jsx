@@ -1,5 +1,6 @@
 import "../About/About.css";
 import Animation from "../../components/Animation/Animation.jsx";
+import icons from "./icons.json";
 
 const About = () => {
   return (
@@ -7,36 +8,36 @@ const About = () => {
       <section className="about">
         <figure>
           <Animation animationClass="slideInLeft">
-            <img src="./aboutbillede.webp" alt="Billede af mig" />
+            <img src="/aboutbillede.webp" alt="Billede af mig" />
           </Animation>
         </figure>
         <article>
           <Animation animationClass="slideInRight">
-            <h2 className="forsideoverskrift">PASSION FOR PERFEKTION</h2>
+            <h1 className="forsideoverskrift">Baggrund & erfaring</h1>
             <p>
-              Mit navn er Mikkel Ruby, jeg er 23 år gammel og er i gang med mit
-              tredje semester på Multimediedesign-uddannelsen på Aarhus
-              Erhvervsakademi, hvor jeg specialiserer mig i programmering.{" "}
+              Mit navn er Mikkel Ruby, jeg er 24 år gammel og studerer
+              webudvikling på Erhvervsakademi Aarhus.
               <br />
               <br />
-              Jeg valgte denne uddannelse, fordi den giver mig mulighed for at
-              kombinere kreativ udfoldelse med praktisk erfaring. Jeg har altid
-              haft en passion for at finde nye måder at udtrykke mig på gennem
-              teknologi og design. På uddannelsen har jeg især udviklet en stor
-              forkærlighed for frontend udvikling. Jeg finder det utroligt
-              spændende at skabe interaktive og engagerende digitale oplevelser,
-              som både fanger brugerens opmærksomhed og opfylder deres behov.{" "}
+              Jeg brænder for at skabe digitale løsninger, der kombinerer
+              funktionalitet, brugervenlighed og æstetik. På studiet har jeg
+              erfaring med HTML, CSS, JavaScript, React, Next.js, Tailwind og
+              SASS samt backend-teknologier som PHP, Node.js, Express og SQL.
               <br />
-              <br /> Frontend udvikling giver mig mulighed for at arbejde med et
-              væld af værktøjer og teknologier for at skabe løsninger, der er
-              både visuelt tiltalende og funktionelle. Jeg sætter pris på den
-              kreative proces, der går forud for at designe brugergrænseflader,
-              der ikke kun ser godt ud, men også fungerer problemfrit og er
-              skræddersyet til brugerens adfærd og behov. Det er denne balance
-              mellem æstetik og funktionalitet, der gør frontend udvikling så
-              fascinerende og givende for mig. Jeg ser frem til at fortsætte med
-              at udvikle mine færdigheder og finde nye måder at anvende min
-              viden på i fremtidige projekter og udfordringer.
+              <br />
+              Jeg arbejder både selvstændigt og i teams, omsætter designs fra
+              Figma til fungerende løsninger, planlægger og udvikler websites,
+              og sikrer, at alt fungerer optimalt for brugeren. I mit studiejob
+              som WordPress-udvikler arbejder jeg med custom themes,
+              vedligeholdelse af sites og mindre projekter med ansvar for
+              planlægning, levering og support.
+              <br />
+              <br />
+              Jeg er nysgerrig, motiveret og organiseret, og jeg stræber efter
+              at skabe engagerende, intuitive og visuelt tiltalende
+              weboplevelser. Mit mål er at fortsætte med at udvikle mine
+              færdigheder og levere digitale løsninger, hvor teknologi og design
+              går hånd i hånd.
             </p>
           </Animation>
         </article>
@@ -47,50 +48,12 @@ const About = () => {
         </Animation>
         <Animation animationClass="slideInBottom">
           <div className="program-wrapper">
-            <figure>
-              <img src="./html.svg" alt="HTML Logo" />
-              <figcaption>HTML5</figcaption>
-            </figure>
-
-            <figure>
-              <img src="./css.svg" alt="CSS Logo" />
-              <figcaption>CSS3</figcaption>
-            </figure>
-
-            <figure>
-              <img src="./js.svg" alt="JavaScript Logo" />
-              <figcaption>JavaScript</figcaption>
-            </figure>
-
-            <figure>
-              <img src="./react.svg" alt="React Logo" />
-              <figcaption>React</figcaption>
-            </figure>
-
-            <figure>
-              <img src="./githubblaa.svg" alt="GitHub Logo" />
-              <figcaption>GitHub</figcaption>
-            </figure>
-
-            <figure>
-              <img src="./vsc.svg" alt="Visual Studio Code Logo" />
-              <figcaption>VSC</figcaption>
-            </figure>
-
-            <figure>
-              <img src="./ps.svg" alt="Photoshop Logo" />
-              <figcaption>Photoshop</figcaption>
-            </figure>
-
-            <figure>
-              <img src="./ai.svg" alt="Illustrator Logo" />
-              <figcaption>Illustrator</figcaption>
-            </figure>
-
-            <figure>
-              <img src="./figma.svg" alt="Figma Logo" />
-              <figcaption>Figma</figcaption>
-            </figure>
+            {icons.map((icon, index) => (
+              <figure key={index}>
+                <img src={icon.src} alt={`${icon.name} Logo`} />
+                <figcaption>{icon.name}</figcaption>
+              </figure>
+            ))}
           </div>
         </Animation>
       </section>
@@ -100,7 +63,7 @@ const About = () => {
         <div className="udtalelse-wrapper">
           <article>
             <Animation animationClass="slideInLeft">
-              <img src="./valdemar.webp" alt="Billede af Valdemar" />
+              <img src="/valdemar.webp" alt="Billede af Valdemar" />
               <h3>Valdemar Berg</h3>
               <h4>Tidl. kollega</h4>
               <p>
@@ -117,7 +80,7 @@ const About = () => {
 
           <article>
             <Animation animationClass="slideInBottom">
-              <img src="./louise.webp" alt="Billede af Louise" />
+              <img src="/louise.webp" alt="Billede af Louise" />
               <h3>Louise Thysen</h3>
               <h4>Medstuderende</h4>
               <p>
@@ -131,7 +94,7 @@ const About = () => {
 
           <article>
             <Animation animationClass="slideInRight">
-              <img src="./emil.webp" alt="" />
+              <img src="/emil.webp" alt="" />
               <h3>Emil Klein</h3>
               <h4>Tidl. kollega</h4>
               <p>

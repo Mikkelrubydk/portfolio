@@ -1,0 +1,38 @@
+[
+  {
+    "name": "HTML5",
+    "src": "/html.svg"
+  },
+  {
+    "name": "CSS3",
+    "src": "/css.svg"
+  },
+  {
+    "name": "JavaScript",
+    "src": "/js.svg"
+  },
+  {
+    "name": "React",
+    "src": "/react.svg"
+  },
+  {
+    "name": "Github",
+    "src": "/githubblaa.svg"
+  },
+  {
+    "name": "VSC",
+    "src": "/vsc.svg"
+  },
+  {
+    "name": "Figma",
+    "src": "/figma.svg"
+  },
+  {
+    "name": "Adobe Photoshop",
+    "src": "/ps.svg"
+  },
+  {
+    "name": "Adobe Illustrator",
+    "src": "/ai.svg"
+  }
+]

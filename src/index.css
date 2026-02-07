@@ -23,22 +23,26 @@ a {
 }
 
 p {
-  font-family: "Pathway Extreme", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   line-height: 1.5;
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
   font-family: "Pathway Extreme", sans-serif;
   font-weight: 700;
 }
 
+h3,
+h4 {
+  font-family: "Syne", monospace;
+  font-weight: 600;
+}
+
 .forsideknap {
   padding: 10px 15px;
-  font-family: "Pathway Extreme", sans-serif;
+  font-family: "DM sans", sans-serif;
   margin-top: 50px;
   font-size: 20px;
   background-color: transparent;

@@ -73,28 +73,34 @@ const NavBar = () => {
   }, [isDesktop]);
 
   return (
-    <nav className="MobileNavigation">
-      <Link to="/">
-        <img src="./logo.webp" className="logo primary" alt="Logo blå" />
-        <img src="./logohvid.webp" className="logo secondary" alt="Logo hvid" />
-      </Link>
-      {click ? (
-        <TfiClose
-          className="HamburgerMenu"
-          size="25px"
-          color="white"
-          onClick={() => setClick(!click)}
-        />
-      ) : (
-        <CiMenuFries
-          className="HamburgerMenu"
-          size="30px"
-          color={menuColor}
-          onClick={() => setClick(!click)}
-        />
-      )}
-      {click && <NavLinks />}
-    </nav>
+    <header className="MobileNavigation">
+      <nav className="nav-wrapper">
+        <Link to="/">
+          <img src="/logo.webp" className="logo primary" alt="Logo blå" />
+          <img
+            src="/logohvid.webp"
+            className="logo secondary"
+            alt="Logo hvid"
+          />
+        </Link>
+        {click ? (
+          <TfiClose
+            className="HamburgerMenu"
+            size="25px"
+            color="white"
+            onClick={() => setClick(!click)}
+          />
+        ) : (
+          <CiMenuFries
+            className="HamburgerMenu"
+            size="30px"
+            color={menuColor}
+            onClick={() => setClick(!click)}
+          />
+        )}
+        {click && <NavLinks />}
+      </nav>
+    </header>
   );
 };
 

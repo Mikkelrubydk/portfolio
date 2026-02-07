@@ -7,7 +7,7 @@ const Nippon = () => {
     <section className="projektvisning">
       <figure>
         <Animation animationClass="slideInLeft">
-          <img src="./nipponmockup.webp" alt="Mockup af Nippons hjemmeside" />
+          <img src="/nipponmockup.webp" alt="Mockup af Nippons hjemmeside" />
         </Animation>
       </figure>
       <article>

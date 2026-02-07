@@ -8,7 +8,7 @@ const Troejborgbryg = () => {
       <figure>
         <Animation animationClass="slideInLeft">
           <img
-            src="./troejborgbrygmockup.webp"
+            src="/troejborgbrygmockup.webp"
             alt="Mockup af TrøjborgBrygs hjemmeside"
           />
         </Animation>

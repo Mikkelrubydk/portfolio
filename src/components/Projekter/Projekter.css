@@ -4,10 +4,20 @@
   overflow: hidden;
   z-index: 2;
   background-color: var(--beige);
-  padding: 20px 0 100px 0;
+  padding: 40px 20px 100px 20px;
+}
+
+.projekter main {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projekter .forsideoverskrift {
+  display: flex;
+  justify-content: center;
   margin-bottom: 0;
 }
 
@@ -133,7 +143,7 @@
     height: 100vh;
     overflow: hidden;
     z-index: 2;
-    padding: 50px;
+    padding: 40px 20px;
     margin-bottom: 0px;
   }
 

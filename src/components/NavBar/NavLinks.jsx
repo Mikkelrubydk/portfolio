@@ -40,14 +40,14 @@ const NavLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./github.svg" alt="Github Logo" />
+            <img src="/github.svg" alt="Github Logo" />
           </a>
           <a
             href="https://www.linkedin.com/in/mikkel-h%C3%B8j-ruby-b5531228b/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./linkedin.svg" alt="Linkedin Logo" />
+            <img src="/linkedin.svg" alt="Linkedin Logo" />
           </a>
         </figure>
       </ul>

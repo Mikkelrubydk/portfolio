@@ -1,15 +1,20 @@
 .ommig {
   background-color: var(--mørkeblå);
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.ommig main {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 20px;
+  margin: 0 auto;
 }
 
 .ommig article {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .ommig article h2 {
@@ -19,7 +24,7 @@
 
 .ommig article p {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 200;
   line-height: 2;
 }
@@ -66,7 +71,7 @@
   .ommig {
     flex-direction: row;
     height: 100vh;
-    padding: 50px;
+    padding: 40px 20px;
   }
 
   .ommig figure {
@@ -82,18 +87,23 @@
     width: 50%;
   }
 
+  .ommig main {
+    flex-direction: row;
+  }
+
   .ommig article {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
   }
 
   .ommig article p {
-    width: 80%;
-    font-size: 18px;
+    width: 100%;
+    font-size: 16px;
   }
 
   .ommig article h2 {
-    text-align: center;
+    text-align: left;
   }
 
   .ommig figure img {

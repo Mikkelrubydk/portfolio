@@ -3,16 +3,18 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .forsideoverskrift {
   display: flex;
   justify-content: left;
+  text-align: left;
   margin-bottom: 20px;
-  font-size: 11vw;
+  font-size: 42px;
   color: rgba(22, 49, 81, 1);
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Syne", monospace;
 }
 
 .kompetencer h3 {
@@ -23,11 +25,10 @@
 .kompetencecontainer article div img {
   display: flex;
   width: 70px;
-  margin: 20px 0;
 }
 
 .kompetencer p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 200;
 }
 
@@ -41,9 +42,18 @@
 /* Computervisning */
 @media (min-width: 1024px) {
   .kompetencer {
-    padding: 52px;
     height: 100vh;
-    padding: 50px;
+  }
+
+  .flex-centrering {
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .kompetencecontainer {
@@ -52,19 +62,10 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 0 50px;
     justify-content: center;
-    padding: 50px 150px;
   }
 
-  .flex-centrering {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+  .kompetencer p {
+    font-size: 16px;
   }
 
   .kompetencer h3 {
@@ -74,18 +75,20 @@
 
   .forsideoverskrift {
     font-size: 4vw;
-    justify-content: center;
+    justify-content: left;
     z-index: 5;
   }
 
   .kompetencecontainer div {
     display: flex;
-    align-items: normal;
+    align-items: center;
+    gap: 24px;
     justify-content: center;
   }
 
   .blurredCircle {
     position: absolute;
+    pointer-events: none;
     bottom: 0;
     width: 60vw;
     height: 60vw;
@@ -109,6 +112,5 @@
   .kompetencecontainer article div img {
     width: 70px;
     height: fit-content;
-    margin-right: 20px;
   }
 }

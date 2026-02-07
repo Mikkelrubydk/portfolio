@@ -8,7 +8,7 @@ const Streetfood = () => {
       <figure>
         <Animation animationClass="slideInLeft">
           <img
-            src="./streetfoodmockup.webp"
+            src="/streetfoodmockup.webp"
             alt="Mockup af Aarhus Streetfoods hjemmeside"
           />
         </Animation>

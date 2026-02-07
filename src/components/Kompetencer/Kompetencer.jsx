@@ -4,16 +4,16 @@ import Animation from "../Animation/Animation.jsx";
 const Kompetencer = () => {
   return (
     <section className="kompetencer" id="kompetencer">
-      <Animation animationClass="slideInBottom">
-        <h2 className="forsideoverskrift">KOMPETENCER</h2>
-      </Animation>
       <div className="flex-centrering">
+        <Animation animationClass="slideInBottom">
+          <h2 className="forsideoverskrift">Kompetencer</h2>
+        </Animation>
         <div className="kompetencecontainer">
           <Animation animationClass="slideInLeft">
             <article>
               <h3>Programmering</h3>
               <div>
-                <img src="./coding.webp" alt="Coding Icon" />
+                <img src="/coding.webp" alt="Coding Icon" />
                 <p>
                   Jeg har erfaring med frontend-udvikling ved hjælp af HTML,
                   CSS, JavaScript og React. Jeg fokuserer på at skabe dynamiske
@@ -28,7 +28,7 @@ const Kompetencer = () => {
             <article>
               <h3>UX/UI Design</h3>
               <div>
-                <img src="./ux-design.webp" alt="UX/UI Icon" />
+                <img src="/ux-design.webp" alt="UX/UI Icon" />
                 <p>
                   Mit arbejde med UX/UI-design sikrer, at brugeren er i fokus.
                   Jeg stræber efter at skabe intuitive og æstetisk tiltalende
@@ -43,7 +43,7 @@ const Kompetencer = () => {
               <h3>Responsivt Design</h3>
               <div>
                 <img
-                  src="./responsive-design.webp"
+                  src="/responsive-design.webp"
                   alt="Responsive Design Icon"
                 />
                 <p>
@@ -59,7 +59,7 @@ const Kompetencer = () => {
             <article>
               <h3>Grafisk Design</h3>
               <div>
-                <img src="./web-design.webp" alt="Web Design Icon" />
+                <img src="/web-design.webp" alt="Web Design Icon" />
                 <p>
                   Med en baggrund inden for grafisk design kan jeg skabe visuelt
                   appellerende elementer, der styrker kommunikationen og

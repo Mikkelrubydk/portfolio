@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./Animation.css";
 
 /**
@@ -36,9 +36,7 @@ const Animation = ({ children, animationClass }) => {
 
     // Rydder op efter sig ved at fjerne observeren, når komponenten afmonteres eller ændres.
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current); // Stopper med at observere elementet, hvis komponenten fjernes.
-      }
+      observer.disconnect(); // Stopper alle observeringer
     };
   }, [animationClass]); // Afhængig af animationClass - hooket kører, hvis animationClass ændres.
 
