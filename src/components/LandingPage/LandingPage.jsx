@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "../LandingPage/LandingPage.css";
 import ScrollPoint from "./ScrollPoint";
-import Beam from "../UI/Beam";
+// import Beam from "../UI/Beam.jsx";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -85,7 +85,7 @@ const LandingPage = () => {
 
   return (
     <section className="forside" id="forside">
-      <Beam />
+      {/* <Beam /> */}
 
       <figure>
         <img src="/forsidefoto.webp" alt="Billede af mig" />
