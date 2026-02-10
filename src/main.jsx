@@ -5,7 +5,7 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
 // Set the basename according to the environment
-const basename = import.meta.env.MODE === "production" ? "/portfolio" : "/";
+const basename = import.meta.env.PROD ? "/portfolio" : "/";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
