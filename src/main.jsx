@@ -4,7 +4,6 @@ import App from "./App.jsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
-// For Vercel skal basename være "/" både i dev og production
 const basename = "/";
 
 createRoot(document.getElementById("root")).render(
