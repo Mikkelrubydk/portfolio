@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "./beam.css";
 
-export default function IntroBeam() {
+function Beam() {
   const beam = useRef();
 
   useEffect(() => {
@@ -24,3 +24,5 @@ export default function IntroBeam() {
     </div>
   );
 }
+
+export default Beam;
