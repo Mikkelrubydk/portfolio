@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "../LandingPage/LandingPage.css";
 import ScrollPoint from "./ScrollPoint";
-import { Beam } from "../UI/Beam.jsx";
+import Beam from "../UI/Beam.jsx";
 
 const LandingPage = () => {
   useEffect(() => {
